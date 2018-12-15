@@ -9,3 +9,4 @@ l.pack()
 if g==g:
   
 root.mainloop()
+#sanyasosat
