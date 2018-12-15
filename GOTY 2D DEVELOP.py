@@ -6,5 +6,6 @@ rootimg=PhotoImage(file="root.gif")
 
 l = Label(image = rootimg)
 l.pack()
-
+if g==g:
+  
 root.mainloop()
