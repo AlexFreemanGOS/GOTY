@@ -19,6 +19,9 @@ def start(event):
     bsettings.destroy()
     bexit.destroy()
     l.destroy()
+    
+    #GAME    
+    
     l1.pack()
 
 
@@ -27,7 +30,25 @@ def start(event):
 
 
 l = Label(image = rootimg)
+bstartimg=PhotoImage(file="start.png")
+bstart = Button(root, image = bstartimg)
+bsettingsimg=PhotoImage(file="settings.png")
+bsettings = Button(root, image = bsettingsimg)
+bexitimg=PhotoImage(file="exit.png")
+bexit = Button(root, image = bexitimg)
+
+
+
+def ext(event):
+    exit()
+    
+bexit.bind('<Button-1>', ext)
+bstart.bind('<Button-1>',start)
+bstart.place(x=463, y=220)
+bsettings.place(x=463, y=370)
+bexit.place(x=463, y=520)
 l.pack()
+root.mainloop()
 
 bstartimg=PhotoImage(file="start.png")
 bstart = Button(root, image = bstartimg)
