@@ -40,7 +40,7 @@ bexit = Button(root, image = bexitimg)
 
 
 def ext(event):
-    exit()
+    root.destroy()
     
 bexit.bind('<Button-1>', ext)
 bstart.bind('<Button-1>',start)
