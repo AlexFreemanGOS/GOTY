@@ -8,3 +8,5 @@ l = Label(image = rootimg)
 l.pack()
 
 root.mainloop()
+
+#sosi sanya
