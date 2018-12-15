@@ -1,7 +1,16 @@
 from tkinter import *
 
 root=Tk()
-root.geometry("1366x768")
+w = root.winfo_screenwidth() 
+h = root.winfo_screenheight() 
+w = w//2 
+h = h//2 
+w = w - 512
+h = h - 300
+root.geometry('"1366x768"+{}+{}'.format(w, h))
+root.resizable(FALSE,FALSE)
+
+
 rootimg=PhotoImage(file="root.gif")
 
 l = Label(image = rootimg)
