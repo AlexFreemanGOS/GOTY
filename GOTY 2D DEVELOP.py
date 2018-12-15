@@ -7,7 +7,7 @@ w = w//2
 h = h//2 
 w = w - 700
 h = h - 450
-root.geometry('"1366x768"+{}+{}'.format(w, h))
+root.geometry('1366x768+{}+{}'.format(w, h))
 root.resizable(FALSE,FALSE)
 
 
