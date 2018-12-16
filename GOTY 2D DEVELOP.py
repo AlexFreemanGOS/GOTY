@@ -14,11 +14,20 @@ rootimg=PhotoImage(file="GOTYLABEL.png")
 l1=Label(bg='lightgreen',text='СУПЕР КРУТАЯ\nИСТОРИЯ',font='Courier 48 bold')
 nextimg=PhotoImage(file='next.png')
 bnext=Button(image=nextimg)
+
 shopimg=PhotoImage(file='shop.png')
 bshop=Button(image=shopimg)
+charimg=PhotoImage(file='char.png')
+bchar=Button(image=charimg)
 
 
-
+def upgrade(event):
+    l1.destroy()
+    bnext.destroy()
+    l.destroy()
+    
+    bshop.place(x=10,y=180)
+    bchar.place(x=10,y=50)
 
 def start(event):
     
@@ -27,18 +36,14 @@ def start(event):
     bexit.destroy()
     l.destroy()
     l1.pack(expand=1,fill=BOTH)
-    def nextt(event):
-        l1.destroy()
-        bnext.destroy()
+
         
-        bshop.place(x=10,y=200)
+        
     bnext.bind('<Button-1>',nextt)  
     bnext.place(x=1100,y=700)
     
     
-    
-def upgrade(event):
-    print('sasa')
+
 
 
 
@@ -64,4 +69,3 @@ bstart.place(x=463, y=220)
 bsettings.place(x=463, y=370)
 bexit.place(x=463, y=520)
 root.mainloop()
-
