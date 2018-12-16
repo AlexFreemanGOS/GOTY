@@ -1,5 +1,7 @@
 from tkinter import *
+import winsound
 
+winsound.PlaySound('maintheme.wav', winsound.SND_FILENAME)
 root=Tk()
 w = root.winfo_screenwidth() 
 h = root.winfo_screenheight() 
