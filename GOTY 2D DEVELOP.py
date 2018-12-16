@@ -56,46 +56,10 @@ def start(event):
     bexit.destroy()
     l.destroy()
     l1.pack(expand=1,fill=BOTH)
-
-        
-        
     bnext.bind('<Button-1>',upgrade)  
     bnext.place(x=1100,y=700)
     
     
-
-
-
-l = Label(image = rootimg)
-l.pack()
-
-bstartimg=PhotoImage(file="start.png")
-bstart = Button(root, image = bstartimg)
-bsettingsimg=PhotoImage(file="settings.png")
-bsettings = Button(root, image = bsettingsimg)
-bexitimg=PhotoImage(file="exit.png")
-bexit = Button(root, image = bexitimg)
-
-
-
-def ext(event):
-    root.destroy()
-    
-bexit.bind('<Button-1>', ext)
-bstart.bind('<Button-1>',start)
-bstart.place(x=463, y=220)
-bsettings.place(x=463, y=370)
-bexit.place(x=463, y=520)
-root.mainloop()
-
-        
-        
-    bnext.bind('<Button-1>',nextt)  
-    bnext.place(x=1100,y=700)
-    
-    
-
-
 
 
 
