@@ -1,7 +1,15 @@
 from tkinter import *
-import winsound
+import random as ran
 
-winsound.PlaySound('maintheme.wav', winsound.SND_FILENAME)
+
+weplist0=(' ', '1',10,0,10,'Меч Новичка'  ,  '2',5,15,10,'Кинжал Новичка')
+ # nomer,+dmg,+crit%,cost,name
+weplistlist=(weplist0,)
+ 
+ 
+ 
+charweplvl=0
+
 root=Tk()
 w = root.winfo_screenwidth() 
 h = root.winfo_screenheight() 
@@ -9,8 +17,9 @@ w = w//2
 h = h//2 
 w = w - 700
 h = h - 450
-root.geometry('1366x768+{}+{}'.format(w, h))
+root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight()))
 root.resizable(FALSE,FALSE)
+root.overrideredirect(True)
 rootimg=PhotoImage(file="GOTYLABEL.png")
 
 l1=Label(bg='lightgreen',text='СУПЕР КРУТАЯ\nИСТОРИЯ',font='Courier 48 bold')
@@ -33,6 +42,11 @@ lchar=Label(image=characterimg)
 
 
 
+#wep1=((weplistlist[charweplvl])[ran.randint(1,( (len(weplistlist[charweplvl])-1)//5 ))])
+#wep1img=PhotoImage(file= (weplistlist[charweplvl])[(''.join(weplistlist[charweplvl]).find(str(wep1)))+4] )#
+# Разбирайся тут я не понел
+
+
 
 
 
@@ -47,6 +61,7 @@ def upgrade(event):
     bnextb.place(x=10,y=615)
 
 def charup(event):
+    
     lchar.place(x=700,y=50)
 
 
