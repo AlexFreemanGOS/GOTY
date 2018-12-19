@@ -20,7 +20,7 @@ h = h - 450
 root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight())) #1366x768
 root.resizable(FALSE,FALSE)
 root.overrideredirect(True)
-rootimg=PhotoImage(file="GOTYLABEL.png")
+rootimg=PhotoImage(file="GotyRoot.png")
 
 l1=Label(bg='lightgreen',text='СУПЕР КРУТАЯ\nИСТОРИЯ',font='Courier 48 bold')
 nextimg=PhotoImage(file='next.png')
@@ -39,6 +39,7 @@ bnextb=Button(image=nextbimg)
 
 characterimg=PhotoImage(file='character.png')
 lchar=Label(image=characterimg)
+
 
 
 
@@ -89,6 +90,7 @@ bsettingsimg=PhotoImage(file="settings.png")
 bsettings = Button(root, image = bsettingsimg)
 bexitimg=PhotoImage(file="exit.png")
 bexit = Button(root, image = bexitimg)
+
 
 
 
