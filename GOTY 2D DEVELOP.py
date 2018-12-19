@@ -17,7 +17,7 @@ w = w//2
 h = h//2 
 w = w - 700
 h = h - 450
-root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight()))
+root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight())) #1366x768
 root.resizable(FALSE,FALSE)
 root.overrideredirect(True)
 rootimg=PhotoImage(file="GOTYLABEL.png")
